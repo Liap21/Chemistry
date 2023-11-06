@@ -1,0 +1,326 @@
+<html>
+
+<head>
+    <title> Informative Page</title>
+    <link rel="stylesheet" type="text/html" href="Informative.html">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+
+    
+    <style>
+        :root {
+            --bgcolor: linear-gradient(45deg, #FFD700, #FFA500, #FFD700, #FFA500, #FFD700, #FFA500, #FFD700, #FFA500);
+            ;
+            --pos_home_btn: 62em; /* para sa #home */
+            --brder_rdius: 30px;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            animation: movingBackground 7s ease infinite;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        img {
+            z-index: -10;
+        }
+
+        #physical_img {
+            transform: translateX(0.1em) translateY(4.4em);
+            padding-bottom: none;
+            border: 5px solid #555;
+            margin: 50px;
+            border-radius: var(--brder_rdius);
+        }
+
+        #physic {
+            position: static;
+            border: 5px solid #555;
+            margin-right: 50px;
+            margin-left: 20px;
+            transform: translateX(0.1em) translateY(2.3em);
+            border-radius: var(--brder_rdius);
+        }
+
+        #page_title {
+            background-color: hsla(0, 0%, 0%, 0.26);
+            padding-bottom: 0.2em;
+            padding-top: 2rem;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+        }
+
+        #physical_paragraph {
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        #key_marker {
+            padding-left: 3rem;
+            padding-bottom: 0.5em;
+            z-index: -1;
+        }
+
+        #key_aspects {
+            text-align: left;
+            transform: translateX(-15rem) translateY(-1.4em);
+            z-index: -1;
+        }
+
+        .main_content {
+            padding-top: 0.1;
+            padding: 3rem;
+            text-align: justify;
+        }
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.123);
+            background: lightyellow;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(360deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            border-radius: 10px;
+        }
+
+        #sidebar_nav {
+            z-index: 2;
+        }
+
+        strong ::after {
+            font-family: 'Archivo';
+        }
+
+        #home {
+            position: sticky;
+            z-index: 10;
+            transform: translateX(90em) translateY(-3.8em);
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            filter: invert(100%);
+        }
+
+        #sidebar_nav {
+            z-index: 20;
+        }
+
+        /* text background designs */
+        .rectangle_background {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#border_adjustment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#key_aspects {
+    transform: translateX(0.1em) translateY(0.5em);
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+    margin-right: 3rem;
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.rectangle_background:hover {
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#key_aspects:hover {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    transform: translate(0, 0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+    <a href="Physical Chemistry.html"></a>
+    <div id="sidebar_nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+            <header>
+                Branches
+            </header>
+            <ul>
+                <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+                <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+                <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+                <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+                <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+                <li style="--clr:#CC338B"><a id="atomic" href="/index_28_10_2023/Chemistry Project/gamePage.html"><i class="yes">Atomic Structure</i></a></li>
+                <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/HopePeriodc.html"><i class="yes">Periodic Table</i></a></li>
+                <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/LASTWEBSITEPUTANGINA/informative.html"><i class="yes">Theories and Models</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="title_section">
+        <h1 id="page_title"> Physical Chemistry </h1>
+        <a href="/index_28_10_2023/Chemistry Project/index.html"><img src="css/home_button_img.png" id="home" /></a>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Physical chemistry</strong> is a branch of chemistry that focuses
+            on understanding the fundamental principles governing
+            the behavior of matter at a molecular and atomic level, as
+            well as the various physical and chemical processes that
+            occur in the natural world. It serves as a bridge between
+            physics and chemistry, using both theoretical and
+            experimental techniques to study the properties and
+            transformations of matter.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            At its core, physical chemistry encompasses a wide range
+            of topics, including thermodynamics, kinetics, quantum
+            mechanics, and spectroscopy. <br>These concepts are
+            essential for understanding the behavior of chemical
+            systems and predicting their reactions.
+        </div>
+    </section>
+    <img align="right" id="physical_img" src="images/physical.jpg" width="500" height="181" />
+
+    <div id="key_marker">
+      <h3 id="key_aspects">Overview of some key areas within physical chemistry:</h3>
+</div>
+
+        <section class="main_content">
+            <div class="rectangle_background">
+                1. <strong>Thermodynamics:</strong> <br>Thermodynamics is the study of
+                energy and heat transfer in chemical systems. It deals
+                with concepts like entropy, enthalpy, and Gibbs free
+                energy, <br>which provide a framework for predicting whether
+                a chemical reaction will occur spontaneously and the
+                direction it will take.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                2. <strong>Kinetics:</strong> <br>Kinetics focuses on the rates of chemical
+                reactions and the factors that influence them. It helps
+                chemists understand the mechanisms <br>by which reactions
+                occur and how to control reaction rates through variables
+                like temperature, concentration, and catalysts.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                3. <strong>Quantum Mechanics:</strong> <br>Quantum mechanics is a branch of
+                physics that plays a crucial role in physical chemistry. It
+                describes the behavior of particles <br>at the atomic and
+                molecular level and provides insights into the electronic
+                structure of atoms and molecules, as well as their energy
+                levels and spectra.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                4. <strong>Spectroscopy:</strong> <br>Spectroscopy is the study of how matter
+                interacts with electromagnetic radiation, such as visible
+                light, UV, and IR radiation. <br>By analyzing the absorption,
+                emission, and scattering of light, chemists can gain
+                information about the composition, structure, and
+                properties of substances.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                5. <strong>Electrochemistry:</strong> <br>Electrochemistry deals with the study
+                of chemical reactions involving the transfer of electrons,
+                such as redox reactions. <br>It is important in understanding
+                processes like corrosion, batteries, and electroplating.
+            </div>
+        </section>
+        <img align="right" id="physic" src="images/physic.jpg" width="800" height="440" />
+        <section class="main_content">
+            <div class="rectangle_background">
+                6. <strong>Chemical Equilibrium:</strong> <br>Chemical equilibrium is the state in
+                which the concentrations of reactants and products in a
+                chemical reaction remain constant over time. <br>Physical
+                chemistry helps determine the conditions under which
+                equilibrium is reached and how it can be manipulated.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                7. <strong>Statistical Mechanics:</strong> <br>Statistical mechanics applies
+                statistical methods to understand the behavior of large
+                collections of molecules. It connects the microscopic
+                behavior of individual particles to macroscopic <br>properties
+                like pressure and temperature.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                8. <strong>Molecular Dynamics:</strong> <br>Molecular dynamics simulations
+                use computer modeling to track the movement and
+                interactions of atoms and molecules <br>over time, providing
+                valuable insights into the behavior of chemical systems.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                9. <strong>Surface Chemistry:</strong> <br>Surface chemistry explores the
+                properties and reactions that occur at the interfaces
+                between solids, liquids, and gases. <br>It has applications in
+                areas like catalysis and material science.
+            </div>
+        </section>
+        <section class="main_content">
+            <div class="rectangle_background">
+                10. <strong>Photochemistry:</strong> <br>Photochemistry investigates chemical
+                reactions triggered by the absorption of light. <br>It plays a
+                crucial role in fields like photography, photovoltaics, and
+                environmental chemistry.
+            </div>
+        </section>
+</body>
+</html>

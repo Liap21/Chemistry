@@ -1,0 +1,172 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+.sidebar{
+	position: fixed;
+	width: 350px;
+	height: 100%;
+	left: -350px;
+	background: #A2AD9C;
+	display: block;
+	transition: all .5s ease;
+	z-index: 5;
+}
+
+#organic:hover:nth-child(1){
+	background-color: #3B3131;	
+	color: white;
+		background: var(--clr);
+		box-shadow: 0 0 45px var(--clr);
+		color: black;
+		letter-spacing: 0.25em;
+	}
+
+#inorganic:hover{
+	background-color: #838996;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.25em;
+}
+
+#physical:hover{
+	background-color: #FFCE44;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.25em;
+}
+
+#bio:hover{
+	background-color: #34A56F;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.25em;
+}
+
+#analytical:hover{
+	background-color: #9E4638;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.20em;
+}
+
+#atomic:hover{
+	background-color: #CC338B;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.25em;
+}
+
+#periodic:hover{
+	background-color: #967BB6;	
+	color: white;
+	background: var(--clr);
+    box-shadow: 0 0 45px var(--clr);
+    color: black;
+    letter-spacing: 0.25em;
+}
+
+.sidebar header{
+	font-size: 22px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #2C3539;
+	user-select: none;
+
+}
+
+.sidebar ul a{
+	display: block;
+	height: 75px;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: #565656;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border-top: 3.5px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid black;
+	transition: .4s;
+	font-family: 'Archivo';
+}
+
+ul li:hover a{
+	padding-left: 40px;
+	letter-spacing: 0.1em;
+}
+
+.sidebar ul a i{
+	margin-right: 16px;
+}
+
+#check{
+	display: none;
+}
+
+label #btn, label #cancel{
+	position: absolute;	
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+label #btn{
+	height: 50px;
+	width: 50px;
+	left: 60px;
+	top: 20px;
+	font-size: 35px;
+	background-image: url('MENU.png');
+	background-size: 2.3em;
+	color: white;
+	padding: 30px 12px;
+	transition: all .5s;
+}
+
+label #cancel{
+	height: 24px;
+	width: 22px;
+	z-index: 1111;
+	transform: translateX(30px);
+	left: -150px;
+	top: 24px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	background-image: url('Transparent_X.png');
+    background-size: 0.7em 0.7em;
+	background-position: top;
+	background-attachment: scroll;
+    background-repeat:no-repeat;
+
+	transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+
+}
+
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+	left: 195px;
+	
+}

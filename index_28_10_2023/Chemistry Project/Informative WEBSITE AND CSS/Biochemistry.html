@@ -1,0 +1,297 @@
+<html>
+<head>
+    <title> Biochemistry </title>
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bgcolor: linear-gradient(45deg, #00FF00, #008000, #00FF00, #008000, #00FF00);
+            --pos_home_btnX: 70em; /* para sa #home */
+            --pos_home_btnY: -10em;
+            --brder_rdius: 30px;
+        }
+
+        body{
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            animation: movingBackground 7s ease infinite;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        img{
+            z-index: -10;
+        }
+
+        #bio_img {
+            transform: translateX(0.1em) translateY(-0.1em);
+            padding-bottom: none;
+            border: 5px solid #555;
+            margin: 50px;
+            border-radius: var(--brder_rdius);
+        }
+
+        #biochemistry {
+            border: 5px solid #555;
+            margin-right: 20px;
+            margin-left: 10px;
+            transform: translateX(2em) translateY(-3em);
+            border-radius: var(--brder_rdius);
+        }
+
+        #page_title {
+            color: white;
+            padding-top: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        header{
+            background-color:  hsla(0, 0%, 0%, 0.11);
+            padding-bottom: 1em;
+        }
+
+        #biochemistry_paragraph {
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        section {
+            padding: 3rem;
+            text-align: justify;
+        }
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.123);
+            background: lightyellow;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(360deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            border-radius: 10px;
+        }
+
+        #sidebar_nav {
+            z-index: 2;
+        }
+
+        strong ::after {
+            font-family: 'Archivo';
+        }
+
+        #home{
+            transform: translateX(90em) translateY(-4.9rem);
+            z-index: 100;
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            filter: invert(100%);
+        }
+
+        .rectangle_background {
+    background: linear-gradient(45deg, #4CAF50, #008000);
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#border_adjustment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#key_aspects {
+    transform: translateX(0.1em) translateY(0.5em);
+    background: linear-gradient(45deg, #008000, #4CAF50);
+    margin-right: 3rem;
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.rectangle_background:hover {
+    background: linear-gradient(45deg, #008000, #4CAF50);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#key_aspects:hover {
+    background: linear-gradient(45deg, #4CAF50, #008000);
+    transform: translate(0, 0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<a href="Biochemistry.html"></a>
+
+<div id="sidebar_nav">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
+
+    <div class="sidebar">
+        <header>
+            Branches
+        </header>
+        <ul>
+            <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+            <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+            <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+            <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+            <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+            <li style="--clr:#CC338B"><a id="atomic" href="/index_28_10_2023/Chemistry Project/gamePage.html"><i class="yes">Atomic Structure</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/HopePeriodc.html"><i class="yes">Periodic Table</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/LASTWEBSITEPUTANGINA/informative.html"><i class="yes">Theories and Models</i></a></li>
+        </ul>
+    </div>
+</div>
+
+<header>
+    <h1 id="page_title"> Biochemistry </h1>
+</header>
+
+<a href="/index_28_10_2023/Chemistry Project/index.html"><img src="css/home_button_img.png" id="home"/></a>
+<body>
+
+    <section id="biochemistry_paragraph">
+        <div id="def_biochemistry" class="rectangle_background">
+            <strong>Biochemistry</strong> is a branch of science that explores the chemical
+            processes and substances within living organisms. <br>It provides a
+            fundamental understanding of life at the molecular level and plays a
+            crucial role in various scientific fields, including biology, medicine, and
+            biotechnology.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            At its core, biochemistry investigates the structure, function, and
+            interactions of biomolecules such as proteins, nucleic acids,
+            carbohydrates, and lipids. <br>These biomolecules are the building blocks
+            of life and are responsible for the myriad of processes that occur
+            within cells, tissues, and organisms.
+        </div>
+    </section>
+    <img align="right" id="bio_img" src="images/bio.jpg" width="680" height="150" />
+    <section>
+        <div class="rectangle_background">
+            <strong>Proteins</strong> are essential macromolecules in biochemistry. They serve as
+            enzymes that catalyze <br>biochemical reactions, receptors that mediate
+            cell signaling, and structural components that give cells <br>their shape
+            and integrity. The structure of a protein is determined by its amino
+            acid sequence, and any <br>changes in this sequence can result in altered
+            protein function, potentially leading to disease.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            <strong>Nucleic acids</strong>, such as <strong>DNA</strong> and <strong>RNA</strong>, store and transmit genetic
+            information. Understanding their structure and function is crucial in
+            genetics <br>and molecular biology. <strong>DNA</strong> is composed of nucleotide
+            building blocks and carries the genetic code that determines an
+            organism's characteristics. <br>RNA, on the other hand, acts as
+            a messenger molecule that translates the genetic code into proteins.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            <strong>Carbohydrates</strong> are energy sources and structural components in
+            living organisms. They consist of simple sugars like glucose and
+            <br>complex polysaccharides like cellulose. <strong>Carbohydrates</strong> play a key role
+            in metabolism, providing the energy needed for cellular processes
+            <br>and serving as markers on the cell surface for communication and
+            recognition.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            <strong>Lipids</strong> are diverse molecules that include fats, phospholipids, and
+            steroids. They are essential for cell membrane structure and function.
+            <br>Additionally, lipids are involved in energy storage and as signaling
+            molecules in various physiological processes.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            <strong>Biochemistry</strong> also explores the metabolic pathways that regulate the
+            conversion of molecules into energy and the synthesis of important
+            <br>compounds. The study of metabolism is essential for understanding
+            how organisms extract energy from food and maintain their cellular processes.
+        </div>
+    </section>
+    <section>
+        <div id="rectangle_background">
+            <img align="right" id="biochemistry" src="images/biochemistry.jpg" width="400" height="200" />
+            <strong>Enzymes</strong> are biological catalysts that play a central role in
+            biochemical reactions. They increase the rate of reactions by lowering
+            the activation energy required for the reaction to occur. <strong>Enzymes</strong> are
+            highly specific, and their activity can be regulated by factors such as
+            temperature, pH, and the presence of cofactors.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            <strong>Biochemistry</strong> has numerous applications in medicine and healthcare.
+            It is crucial for understanding diseases at the molecular level and
+            developing treatments. <br>For example, the field of pharmacology relies
+            on a deep understanding of biochemical pathways to design drugs
+            that target specific molecular processes. Diagnostic techniques <br>like
+            <strong>PCR</strong> (polymerase chain reaction) and <strong>ELISA</strong> (enzyme-linked
+            immunosorbent assay) are based on biochemistry principles and are
+            used for disease detection.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            In <strong>biotechnology</strong>, <strong>biochemistry</strong> is used to engineer and produce
+            valuable products such as pharmaceuticals, biofuels, and genetically
+            <br>modified organisms. Genetic engineering techniques, like
+            recombinant DNA technology, enable the manipulation of genes and
+            proteins <br>for various applications.
+        </div>
+    </section>
+    <section>
+        <div class="rectangle_background">
+            In conclusion, <strong>biochemistry</strong> is a multidisciplinary field that provides
+            insight into the molecular mechanisms of life. It explores the structure
+            and function of biomolecules, metabolic pathways, and the intricate
+            relationships between various cellular components. The knowledge
+            gained from biochemistry has far-reaching implications in fields such
+            as medicine, biotechnology, and agriculture, contributing to our
+            understanding of life and the development of innovative solutions to
+            complex biological challenges.
+        </div>
+    </section>
+</body>
+</html>

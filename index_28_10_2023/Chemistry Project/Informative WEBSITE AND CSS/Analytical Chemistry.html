@@ -1,0 +1,342 @@
+<html>
+<head>
+    <title> Analytical Chemistry </title>
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bgcolor: linear-gradient(45deg, #FF69B4, #FF1493, #FF69B4, #FF1493, #FF69B4, #FF1493, #FF69B4, #FF1493);
+            --pos_home_btn: 62em; /* para sa #home */
+            --brder_rdius: 30px;
+        }
+
+        body{
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            animation: movingBackground 7s ease infinite;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        img{
+            z-index: -10;
+        }
+
+        #analytical_img {
+            transform: translateX(1em) translateY(-2.2em);
+            padding-bottom: none;
+            border: 5px solid #555;
+            margin: 50px;
+            border-radius: var(--brder_rdius);
+        }
+
+        #analyze1 {
+            position: static;
+            border: 5px solid #555;
+            margin-right: 50px;
+            margin-left: 20px;
+            transform: translateX(0.1em) translateY(2.3em);
+            border-radius: var(--brder_rdius);
+        }
+
+        #page_title{
+            background-color: hsla(0, 0%, 0%, 0.26);
+            padding-bottom: 0.2em;
+            padding-top: 2rem;
+            font-size: 3rem;
+            color: white;
+            text-align:center;
+        }
+
+        #analytical_paragraph{
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        #key_marker{
+            padding-left: 3rem;
+            padding-bottom: 0.5em;
+            z-index: -1;
+        }
+        #key_aspects{
+            text-align: left;
+            transform: translateX(-15rem) translateY(-1.4em);
+            z-index: -1;
+        }
+
+        .main_content{
+            padding-top: 0.1;
+            padding: 3rem;
+            text-align: justify;
+        }
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+  
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.123);
+        background: lightyellow;
+        border-radius: 5px;
+        }
+  
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: linear-gradient(360deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border-radius: 10px;
+        }
+
+        #sidebar_nav{
+            z-index: 2;
+        }
+
+        strong ::after{
+            font-family: 'Archivo';
+        }
+
+        #home{
+            position: sticky;
+            z-index: 10;
+            transform: translateX(90em) translateY(-3.8em);
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            filter: invert(100%);
+        }
+
+        #sidebar_nav{
+            z-index: 20;
+        }
+
+        /* text background designs */
+        .rectangle_background {
+    background: linear-gradient(135deg, #FFA07A, #FF6347);
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#border_adjustment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#key_aspects {
+    transform: translate(0.1em, 0.5em);
+    background: linear-gradient(135deg, #00BFFF, #1E90FF);
+    margin-right: 3rem;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(30, 144, 255, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+
+.rectangle_background:hover {
+    background: linear-gradient(135deg, #FF6347, #FFA07A);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 99, 71, 0.3);
+}
+
+#key_aspects:hover {
+    background: linear-gradient(135deg, #1E90FF, #00BFFF);
+    transform: translate(0, 0);
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.3);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* added line */
+}
+
+
+
+
+    </style>
+</head>
+    <a href="Analytical Chemistry.html"></a>
+
+    <div id="sidebar_nav">
+    <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+                <header>
+                    Branches 
+                </header>
+            <ul>
+            <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+            <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+            <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+            <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+            <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+            <li style="--clr:#CC338B"><a id="atomic" href="/index_28_10_2023/Chemistry Project/gamePage.html"><i class="yes">Atomic Structure</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/HopePeriodc.html"><i class="yes">Periodic Table</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/LASTWEBSITEPUTANGINA/informative.html"><i class="yes">Theories and Models</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <h1 id="page_title"> Analytical Chemistry </h1>
+    </header>
+        <a href="/index_28_10_2023/Chemistry Project/index.html"><img src="css/home_button_img.png" id="home"/></a>
+
+    <body>
+        <img align="right" id="analytical_img" src="images/Analytical.jpg" width="480" height="182"/>
+
+        <section id="analytical_paragraph">
+            <div id="def_analytical" class="rectangle_background">
+            <strong>Analytical chemistry</strong> is a multifaceted branch of chemistry that plays
+            a fundamental rolein the field of science and industry. It
+            focuses on the identification, quantification, and characterization
+            of chemical compounds, as well as the analysis of complex mixtures.
+            The primary goal of analytical chemistry is to gather information
+            about the composition and properties of substances, providing
+            crucial insights in fields such as pharmaceuticals, environmental
+            monitoring, food safety, forensic science, and materials
+            science.
+            </div>
+        </section>
+
+        <br>
+        <section>
+            <div id="key_marker" >
+                <h3 id="key_aspects"> The key aspects of analytical chemistry: </h3>
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="rectangle_background">
+            <strong>1. Qualitative Analysis:</strong> <br>One of the key objectives of analytical
+            chemistry is to determine the identity of a particular chemical
+            substance within a sample. This can involve the use of various
+            techniques, such as spectroscopy, chromatography, and mass spectrometry,
+            to identify the presence of specific elements or compounds.
+            Qualitative analysis is vital in fields like forensics, where
+            it helps identify illegal drugs, toxins, or trace evidence.
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="rectangle_background">
+            <strong>2. Quantitative Analysis:</strong> 
+            <br>Analytical chemists also aim to
+            determine the quantity or concentration of a specific substance
+            within a sample. This involves precise measurement techniques
+            to quantify the amount of a particular element,molecule, or
+            compound present. Quantitative analysis is crucial in pharmaceuticals
+            toensure the correct dosage of active ingredients in medications
+            or in environmental monitoring to assess pollutant levels.
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="rectangle_background">
+                <strong>3. Separation Techniques:</strong>
+                <br>Many samples contain a mixture of
+                different substances, and analytical chemistry provides various
+                separation methods to isolate and identify individual components.
+                Chromatography, for example, is a widely used technique that
+                separates compounds based on their affinity for a stationary
+                phase and their ability to travel through a mobile phase,
+                allowing for the separation of complex mixtures. 
+            </div>
+        </section>
+            
+        <section class="main_content"> 
+            <div class="rectangle_background">
+            <strong>4. Instrumentation:</strong>
+            <br>Analytical chemistry heavily relies
+            on advancedinstrumentation and technology to perform accurate
+            analyses. Instruments like spectrophotometers, mass spectrometers,
+            and nuclear magnetic resonance (NMR) spectrometers provide
+            valuable data for identifying and quantifying substances.
+            These instruments have evolved to offer high sensitivity, precision,
+            and automation, making analytical chemistry more efficient and reliable.
+            </div>
+        </section>
+
+        <section class="main_content">
+            <div class="rectangle_background">
+                <strong>5. Quality Control:</strong> 
+                <br>Analytical chemistry is integral to quality
+                control in various industries. It helps ensure the consistency
+                <br>and safety of products, such as pharmaceuticals, food, and
+                cosmetics, by verifying that they meet established
+                standards and specifications.
+            </div>
+        </section>
+            
+            <img align="right" id="analyze1" src="images/Analyze1.jpg" width="500" height="192" />
+        
+        <section class="main_content">
+            <div class="rectangle_background" id="border_adjustment">
+            <strong>6. Environmental Analysis:</strong> 
+            <br>Environmental analytical chemistry
+            is crucial for assessing the impact of human activities on the
+            environment. It involves monitoring air and water quality,
+            analyzing soil samples, and detecting pollutants and contaminants.
+            This information informs environmental regulations and
+            policies aimed at protecting ecosystems and human health.
+            </div>
+        </section>
+
+        <section class="main_content">
+            <div class="rectangle_background">
+            <strong>7. Material Characterization:</strong>
+            <br>In materials science, analytical
+            chemistry is used to determine the composition and properties
+            of materials, such as metals, polymers, and ceramics. This
+            knowledge is essential for designing and improving materials
+            with specific properties for various applications.
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="rectangle_background">
+            <strong>8. Research and Development:</strong> 
+            <br>Analytical chemistry also plays
+            a vital role in research and development. Scientists use it to
+            study the chemical properties of new compounds, investigate
+            reaction mechanisms, and optimize processes in fields like
+            pharmaceuticals, petrochemicals, and nanotechnology.
+            </div>
+        </section>
+        
+        <section class="main_content">
+            <div class="rectangle_background">
+                In summary, <strong>Analytical chemistry</strong> is a diverse and essential
+            discipline that provides the foundation for understanding the
+            composition, structure, and behavior of matter. Its applications
+            are wide-ranging, from ensuring the safety of our food and
+            environment to enabling groundbreaking discoveries in scientific
+            research and industry. Analytical chemists continually develop new
+            methods and technologies to enhance the accuracy and efficiency of
+            their analyses, making it an ever-evolving field at the intersection
+            of chemistry, physics, and instrumentation.
+            </div>
+        </section>
+    </body>
+</html>

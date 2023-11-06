@@ -1,0 +1,135 @@
+<html>
+
+    <head>
+    <title> Informative Page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="text/css" href="css/navbar_style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Archivo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --bgcolor: linear-gradient(45deg, 
+            #003366,
+            #000, 
+            #003366, 
+            #000, 
+            #003366);;
+            --pos_home_btnX: 70em; /* para sa #home */
+            --pos_home_btnY: 2.3em;
+            --brder_rdius: 30px;
+        }
+
+        body{
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: movingBackground 7s ease infinite;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* home button */
+        #home{
+            transform: translateX(var(--pos_home_btnX)) translateY(var(--pos_home_btnY));
+            height: 3rem;
+            width: 3rem;
+            position: absolute;
+            filter: invert(100%);
+        }
+
+        #homeButtonSection{
+            background-color: hsl(253, 100%, 50%);
+        }
+
+        /* list */
+        li{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-family: 'Archivo';
+        }
+
+        h1{
+            z-index: -1;
+            color: white;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        h2{
+            color: white;
+            text-align: center;
+        }
+
+        /* div position for the list */
+        #div_pos{
+            transform: translateY(10em);
+        }
+
+        #sidebar{
+            z-index: 20;
+        }
+    </style>
+    </head>
+
+    <body>
+        <input type="checkbox" id="check">
+
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+            <header>Branches</header>
+        <ul>
+            <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+            <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+            <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+            <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+            <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+            <li style="--clr:#CC338B"><a id="atomic" href="Atomic Structure.html"><i class="yes">Atomic Structure</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="Periodic Table.html"><i class="yes">Periodic Table</i></a></li>
+        </ul>
+        </div>
+
+        <section id="homeButtonSection">
+            <a href="Informative.html"><img src="css/home_button_img.png" id="home"/></a>
+        </section>
+
+        <section>
+            <div id="div_pos">
+                <h1><b>This is the Information Section!</b></h1>
+                <br>
+                <div id="list_pages">
+                    <h2>Here are the contents: </h2>
+                    <ol>
+                        <li>Analytical Chemistry</li>
+                        <li>Atomic Structure</li>
+                        <li>Biochemistry</li>
+                        <li>Inorganic Chemistry</li>
+                        <li>Organic Chemistry</li>
+                        <li>Periodic Table</li>
+                        <li>Physical Chemistry</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

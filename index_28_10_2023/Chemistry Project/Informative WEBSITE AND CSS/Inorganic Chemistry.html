@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <title> Inorganic Chemistry </title>
+    <link rel="stylesheet" type="text/html" href="Informative.html">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bgcolor: linear-gradient(45deg, #5B2C10, #8B4513, #5B2C10, #8B4513, #5B2C10, #8B4513, #5B2C10, #8B4513);
+            --pos_home_btn: 62em; /* para sa #home */
+            --brder_rdius: 30px;
+        }
+
+        body{
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            text-align: justify;
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            min-height: 100vh;
+            animation: movingBackground 7s ease infinite;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        /* css ng images */
+        .pic_border{
+            z-index: -10;
+            border: 5px solid #555;
+        }
+
+        #inorganic_img {
+            margin-right: 10px;
+            margin-left: 20px;
+            transform: translateX(2.5em) translateY(-2em);
+            border-radius: var(--brder_rdius);
+        }
+
+        #not_organic {
+            transform: translateX(1em) translateY(3.2rem);
+            margin-top: 8px;
+            margin-bottom: 10px;
+            margin-right: 50px;
+            margin-left: 20px;
+            border-radius: var(--brder_rdius);
+        }
+
+        .main_content {
+    margin-right: 30px;
+    margin-left: 30px;
+    color: black;
+    background-color: #8B4513; /* Brown color */
+    padding: 2em;
+    border-radius: var(--brder_rdius);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.main_content:hover {
+    background-color: #A52A2A; /* Different shade of brown on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+
+
+        #title_section{
+            background-color: hsla(0, 0%, 0%, 0.11);
+            padding-bottom: 1em;
+        }
+
+        #page_title {
+            color: white;
+            padding-top: 2rem;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+  
+        /* Track */
+        ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.123);
+        background: lightyellow;
+        border-radius: 5px;
+        }
+  
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: linear-gradient(360deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border-radius: 10px;
+        }
+
+        #sidebar_nav{
+            z-index: 2;
+        }
+
+        strong ::after{
+            font-family: 'Archivo';
+        }
+
+        #home{
+            z-index: 100;
+            transform: translateX(90em) translateY(-2.8em);
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            filter: invert(100%);
+        }
+    </style>
+</head>
+    <body>
+        <a href="Inorganic Chemistry.html"></a>
+
+        <div id="sidebar_nav">
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+        
+            <div class="sidebar">
+                <header>
+                    Branches
+                </header>
+                <ul>
+                    <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+                    <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+                    <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+                    <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+                    <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+                    <li style="--clr:#CC338B"><a id="atomic" href="/index_28_10_2023/Chemistry Project/gamePage.html"><i class="yes">Atomic Structure</i></a></li>
+                    <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/HopePeriodc.html"><i class="yes">Periodic Table</i></a></li>
+                    <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/LASTWEBSITEPUTANGINA/informative.html"><i class="yes">Theories and Models</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <section id="title_section">
+            <h1 id="page_title"> Inorganic Chemistry </h1>
+            <a href="/index_28_10_2023/Chemistry Project/index.html"><img src="css/home_button_img.png" id="home"/></a>
+        </section>
+<br>
+<br>
+        <section class="main_content">
+            <img align="right" class="pic_border" id="inorganic_img" src="images/inorganic.jpg" width="500" height="280" />
+
+            <div class="first_para">
+            <strong>Inorganic chemistry</strong> is a branch of chemistry that focuses
+            on the study of inorganic compounds, which are
+            compounds that do not contain arbon-hydrogen (C-H)
+            bonds. It is a diverse and fundamental field of chemistry
+            that explores the properties, structures, and reactions of
+            norganic compounds, including metals, minerals, and
+            non-metallic substances. 
+            </div>
+<br>
+<br>
+            <div class="first_para">
+            <strong>Inorganic chemistry</strong> plays a
+            critical role in various scientific and industrial applications,
+            ranging from materials science and catalysis to
+            environmental science and medicine.
+            </div>
+        </section>
+<br>
+<br>
+        <section class="main_content">
+            <div>
+                One of the primary areas of interest in <strong>inorganic chemistry</strong>
+                is the study of elements and their compounds. This
+                includes the periodic table, which categorizes elements
+                based on their atomic number, electron configuration, and
+                chemical properties. Inorganic chemists investigate the
+                behavior and properties of elements, as well as the
+                formation and stability of their compounds.
+            </div>
+        </section>
+<br>
+<br>
+        <section class="main_content">
+            <strong>Inorganic compounds</strong> encompass a wide range of
+            substances, such as salts, minerals, metals, and
+            coordination compounds. <strong>Coordination compounds</strong> are a
+            significant focus of inorganic chemistry, where metal ions
+            are surrounded by ligands (molecules or ions) that form
+            complex structures with distinctive properties. These
+            compounds find applications in a variety of fields,
+            including catalysis, medicine, and materials science.
+        </section>
+<br>  
+<br>        
+        <section class="main_content">
+            <strong>Inorganic chemistry</strong> also delves into the study of transition
+            metal complexes, which are compounds formed by
+            transition metals like iron, copper, and platinum. These
+            complexes play a critical role in biological systems (e.g.,
+            heme in hemoglobin) and have important catalytic
+         properties in industrial processes.
+        </section>
+<br>  
+<br>      
+        <section class="main_content">
+            <strong>Inorganic chemistry</strong> is closely linked to the study of
+            <strong>organometallic compounds</strong>, which contain metal-carbon
+            bonds. <strong>Organometallic compounds</strong> are essential in
+            catalysis, and they have significant applications in the
+            synthesis of complex organic molecules and the
+            production of various materials.
+        </section>
+<br>   
+<br>        
+        <section class="main_content">
+            The study of <strong>inorganic chemistry</strong> also extends to the field
+            of main group chemistry, which includes elements in the s-
+            and p-blocks of the periodic table. These elements form a
+            wide variety of compounds, including those with
+            important industrial applications, like silicones and
+            semiconductors.
+        </section>
+            
+            <img align="right" class="pic_border" id="not_organic" src="images/Notorganic.jpg" width="400" height="161" />
+<br>
+<br>
+        <section class="main_content">
+            The properties of <strong>inorganic compounds</strong> are influenced by
+            various factors, such as oxidation states, coordination
+            geometry,  and ligand interactions. Inorganic chemists use
+            a range of analytical techniques, including spectroscopy,
+            X-ray crystallography,  and nuclear magnetic resonance
+            (NMR) spectroscopy, to determine the structures and
+            properties of these compounds.
+        </section>
+<br>   
+<br>       
+        <section class="main_content">
+            <strong>Inorganic chemistry</strong> has numerous practical applications.
+            For instance, it plays a critical role in materials science,
+            where the development  of new materials with specific
+            properties is of great importance. <strong>Inorganic compounds</strong>
+            are used in the production of ceramics, catalysts,  and
+            superconductors, among other materials.
+        </section>
+<br>  
+<br>        
+        <section class="main_content">
+            In the environmental field, <strong>inorganic chemistry</strong> is crucial
+            for understanding the behavior of pollutants and
+            contaminants in natural systems.  It also aids in the
+            development of technologies for environmental
+            remediation and pollution control.
+        </section>
+<br>    
+<br>       
+        <section class="main_content">
+            In <strong>medicine</strong>, <strong>inorganic chemistry</strong> is involved in the design
+            and development of pharmaceuticals, particularly in the
+            creation of metal-based drugs for cancer treatment and
+            diagnostics. <strong>Radioactive isotopes</strong> of inorganic elements
+            are used in medical imaging and therapy.
+        </section>
+<br>     
+<br>     
+        <section class="main_content">
+            branch of chemistry that investigates the properties,
+            structures, and reactions of inorganic compounds. Its
+            scope is broad and encompasses a wide range of
+            substances, including metals, minerals, and coordination
+            compounds.  <strong>Inorganic chemistry</strong> is essential in various
+            scientific and industrial applications, including materials
+            science, environmental science, medicine, and catalysis. It
+            plays a vital role in understanding the behavior of
+            inorganic compounds and their practical applications,
+            contributing to advancements in numerous fields and the
+            betterment of society.
+            In conclusion, <strong>inorganic chemistry</strong> is a fundamental
+        </section>
+<br><br><br>
+    </body>
+</html>

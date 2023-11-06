@@ -1,0 +1,317 @@
+<html>
+
+<head>
+    <title> Informative Page</title>
+    <link rel="stylesheet" type="text/html" href="Informative.html">
+    <link rel="stylesheet" href="css/navbar_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bgcolor: linear-gradient(45deg, #333333, #C0C0C0, #A9A9A9, #C0C0C0, #A9A9A9, #C0C0C0, #A9A9A9, #C0C0C0, #A9A9A9);
+            ;
+            --pos_home_btn: 62em; /* para sa #home */
+            --brder_rdius: 30px;
+        }
+
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            background: var(--bgcolor);
+            background-size: 400% 400%;
+            animation: movingBackground 7s ease infinite;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @keyframes movingBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        img {
+            z-index: -10;
+        }
+
+        #organic_img {
+            transform: translateX(0.1em) translateY(-0.1em);
+            padding-bottom: none;
+            border: 5px solid #555;
+            margin: 50px;
+            border-radius: var(--brder_rdius);
+        }
+
+        #org {
+            position: static;
+            border: 5px solid #555;
+            margin-right: 50px;
+            margin-left: 20px;
+            transform: translateX(-0.5em) translateY(5.8em);
+            border-radius: var(--brder_rdius);
+        }
+
+        #page_title {
+            background-color: hsla(0, 0%, 0%, 0.26);
+            padding-bottom: 0.2em;
+            padding-top: 2rem;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+        }
+
+        #organic_paragraph {
+            text-align: justify;
+            padding-top: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .main_content {
+            padding-top: 0.1;
+            padding: 3rem;
+            text-align: justify;
+        }
+
+        /* scroll bar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.123);
+            background: lightyellow;
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(360deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+            border-radius: 10px;
+        }
+
+        #sidebar_nav {
+            z-index: 2;
+        }
+
+        strong ::after {
+            font-family: 'Archivo';
+        }
+
+        #home {
+            position: sticky;
+            z-index: 10;
+            transform: translateX(90em) translateY(-3.8em);
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            filter: invert(100%);
+        }
+
+        #sidebar_nav {
+            z-index: 20;
+        }
+
+        /* text background designs */
+        .rectangle_background {
+    background: linear-gradient(45deg, #C0C0C0, #A9A9A9);
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#border_adjustment {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+#key_aspects {
+    transform: translateX(0.1em) translateY(0.5em);
+    background: linear-gradient(45deg, #A9A9A9, #808080);
+    margin-right: 3rem;
+    padding: 1em;
+    border-radius: var(--brder_rdius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.rectangle_background:hover {
+    background: linear-gradient(45deg, #A9A9A9, #C0C0C0);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#key_aspects:hover {
+    background: linear-gradient(45deg, #808080, #A9A9A9);
+    transform: translate(0, 0);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+    </style>
+</head>
+<body>
+    <a href="Organic Chemistry.html"></a>
+    <div id="sidebar_nav">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+
+        <div class="sidebar">
+            <header>
+                Branches
+            </header>
+            <ul>
+                <li style="--clr:#3B3131"><a id="organic" href="Organic Chemistry.html"><i class="">Organic Chemistry</i></a></li>
+                <li style="--clr:#838996"><a id="inorganic" href="Inorganic Chemistry.html"><i class="yes">Inorganic Chemistry</i></a></li>
+                <li style="--clr:#FFCE44"><a id="physical" href="Physical Chemistry.html"><i class="yes">Physical Chemistry</i></a></li>
+                <li style="--clr:#34A56F"><a id="bio" href="Biochemistry.html"><i class="yes">Biochemistry</i></a></li>
+                <li style="--clr:#9E4638"><a id="analytical" href="Analytical Chemistry.html"><i class="yes">Analytical Chemistry</i></a></li>
+                <li style="--clr:#CC338B"><a id="atomic" href="/index_28_10_2023/Chemistry Project/gamePage.html"><i class="yes">Atomic Structure</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/HopePeriodc.html"><i class="yes">Periodic Table</i></a></li>
+            <li style="--clr:#967BB6"><a id="periodic" href="/index_28_10_2023/Chemistry Project/LASTWEBSITEPUTANGINA/informative.html"><i class="yes">Theories and Models</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="title_area">
+        <h1 id="page_title"> Organic Chemistry </h1>
+        <a href="/index_28_10_2023/Chemistry Project/index.html"><img src="css/home_button_img.png" id="home"/></a>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Organic chemistry</strong> is a branch of chemistry that focuses on the study
+            of carbon-containing compounds, which are the building blocks of
+            life. <br>It is a diverse and central field within chemistry, essential to
+            understanding the molecular composition and behavior of a wide
+            range of substances.
+        </div>
+    </section>
+    <img align="right" id="organic_img" src="images/organic.jpg" width="790" height="470" />
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Carbon</strong> is the foundational element in organic chemistry due to its
+            unique ability to form stable covalent bonds with other carbon atoms
+            and various other elements. These covalent bonds can create an
+            immense variety of compounds, including hydrocarbons (compounds
+            consisting of only carbon and hydrogen), which are the basis of many
+            organic molecules.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Key classes of organic compounds</strong> include alkanes (saturated
+            hydrocarbons), alkenes (unsaturated hydrocarbons with double
+            bonds), alkynes (unsaturated hydrocarbons with triple bonds), and
+            aromatic compounds (containing benzene rings). The structure of
+            organic <br>molecules can be represented using structural formulas, line-
+            angle formulas, or condensed structural formulas, which provide
+            valuable information about the arrangement of atoms in a compound.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Functional groups</strong> are specific atom or group arrangements within
+            organic molecules that determine their chemical properties and
+            reactivity. <br>Examples of common functional groups include <strong>
+                alcohols,
+                aldehydes, ketones, carboxylic acids, and amines
+            </strong>. These groups
+            significantly influence <br>the behavior of the molecules they are a part of,
+            allowing organic chemists to predict and control chemical reactions.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            One of the fundamental aspects of <strong>organic chemistry</strong> is
+            understanding chemical reactions. <strong>Organic reactions</strong> involve the
+            breaking <br>and forming of covalent bonds, and they are classified into
+            various types, including addition, elimination, substitution, and
+            rearrangement reactions. <br>Understanding these reactions is essential
+            for designing and controlling chemical processes, whether in the
+            laboratory or in industrial applications.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Isomerism</strong> is a prevalent concept in organic chemistry. <strong>Isomers</strong> are
+            compounds with the same molecular formula but different structural
+            <br>arrangements or spatial orientations. <strong>Structural isomers</strong> have
+            different connectivity patterns, while stereoisomers have the same
+            connectivity <br>but differ in the spatial arrangement of atoms.
+            Understanding isomerism is crucial for recognizing the diversity and
+            complexity of organic compounds.
+            <img align="right" id="org" src="images/org.jpg" width="500" height="180" />
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Nomenclature</strong>, or naming organic compounds, is another important
+            aspect of organic chemistry. <strong>
+                <br>The International Union of Pure and
+                Applied Chemistry (IUPAC)
+            </strong> provides standardized <br>rules for naming
+            organic molecules, ensuring clarity and consistency in
+            communication <br>among chemists. <strong>Organic nomenclature</strong> can be quite
+            detailed and relies on the systematic <br>identification of functional
+            groups, parent chains, and substituents.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Organic chemistry</strong> plays a pivotal role in various scientific and
+            industrial applications. <br>It is crucial in the synthesis of
+            pharmaceuticals, agrochemicals, and materials. <strong><br>Medicinal chemistry</strong>,
+            a subfield of organic chemistry, is dedicated to designing and
+            developing drugs to treat various diseases. <br>The discovery of new
+            drugs often involves modifying the structure of organic molecules to
+            optimize their pharmacological properties.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            In the field of materials science, <strong>organic chemistry</strong> is instrumental in
+            the development of polymers, plastics, and advanced materials. <br>The
+            versatility of carbon chemistry allows for the creation of polymers
+            with tailored properties, making them indispensable in modern
+            manufacturing.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            <strong>Environmental chemistry</strong> is another area where organic chemistry has
+            a significant impact. The study of pollutants, toxins, <br>and the
+            degradation of organic compounds in the environment is vital for
+            addressing issues like pollution, waste management, and
+            sustainability.
+        </div>
+    </section>
+    <section class="main_content">
+        <div class="rectangle_background">
+            In conclusion, <strong>organic chemistry</strong> is the study of carbon-containing
+            compounds, with a focus on their structure, reactivity, and properties.
+            <br>It is a foundational discipline that underpins many scientific and
+            industrial applications, from drug development to materials science
+            <br>and environmental protection. <strong>Organic chemistry</strong> continues to be a
+            dynamic and evolving field, contributing to our understanding of the
+            complex <br>world of carbon-based molecules and their diverse
+            applications in our everyday lives.
+        </div>
+    </section>
+
+    
+</body>
+</html>
